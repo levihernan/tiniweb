@@ -225,9 +225,9 @@
                     </li>
                   <?php endforeach ?>
                 </ul>
-                <a class="boton-tienda" target="-_blank" href="http://www.valentinavaras.mitiendanube.com">
+                <!-- <a class="boton-tienda" target="-_blank" href="http://www.valentinavaras.mitiendanube.com">
                   <img src="assets/images/VV-Tienda-BotonTexto.png" alt="">
-                </a>
+                </a> -->
               </div>
               <img class="middle" data-stellar-ratio="0.9" src="assets/images/VV-Tienda-Bolsa.png" alt="">
             </div>

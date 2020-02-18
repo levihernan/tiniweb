@@ -1,0 +1,108 @@
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    outline: none;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+figcaption{
+    margin-top: 10px;
+    text-align: center;}
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Project watermelon
+-------------------------------------------------- */
+
+.watercontent{
+    padding: 100px !important;
+    min-width: auto;
+    height: 100vh !important;
+}
+.watercontent img{
+    width: 100%;
+    margin: 20px 0;
+}
+.watertext{
+    min-width: auto;
+}
+
+
+.watertext > .waterfront > .social-share{
+    //position: relative !important;
+}
+
+.side-color .waterfront{
+  height: 100vh;
+}
+
+.waterfront{
+    //height: Calc(100vh - 48px);
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+.waterfront p{
+    text-align: center !important;
+}
+
+.social-share{
+  position: absolute;
+  bottom: 50px;
+}
+.social-share > a > i{
+  width: 30px;
+}
+
+@media screen and (max-width: 70em) {
+    .water-content{
+      height: auto;
+    }
+    .water-wrap{
+        //overflow: scroll;
+        height: 100%;
+    }
+    .side-image{
+        height: auto !important;
+        width: 100%;
+        float: none !important;
+    }
+    .watertext{
+        overflow: initial !important;
+    }
+    .text h1{
+        font-size: 2.5em !important;
+        padding: 20px;
+    }
+    .text p{
+        //padding: 20px;
+    }
+    .post img {
+    padding-bottom: 0px !imporant;
+    }
+}
+@media screen and (max-width: 40em) {
+}
+
+@media screen and (min-width: 1900px) {
+}

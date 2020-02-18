@@ -1,0 +1,206 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../../content/misc/helveticaneue.ttf');
+}
+@font-face {
+    font-family: HelveticaLight;
+    src: url('../../content/misc/helveticalight.ttf');
+}
+
+.section{
+    min-height: 105vh;
+    width: 100%;
+    padding: 0 100px;
+    position: relative;
+}
+.home{
+    background: #61C9BA;
+    background-image: url('../../content/misc/home.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-img{
+    max-width: 100%;
+    max-height: 200px;
+    transition: all ease .5s;
+}
+.container{
+    width: 100%;
+    padding: 100px 100px;
+    position: relative;
+}
+.tile{
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+    padding: 30px;
+}
+.star{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background:  url('../../content/misc/star.png');
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .5s;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.star:hover{
+    transform: rotate(720deg);
+    transition: all ease 2s;
+}
+.section-img:hover{
+    transform: rotate(-720deg);
+    transition: all ease 2s;
+}
+.category-title{
+    width: 100%;
+    text-align: center;
+}
+.section-title{
+    padding: 60px;
+    font-size: 4em !important;
+}
+.floating-image{
+    max-height: 35vh;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    transform: rotate(-9deg);
+    transition: all ease 7s;
+}
+.floating-image:hover{
+    transform: rotate(0deg);
+    transition: all ease .5s;
+}
+
+
+#textos{
+    background:#ffcccc;
+    color: #000 !important;
+}
+#textos a{
+    color: #000;
+}
+#collages{
+    background:#ff0099;
+}
+#collages ul{
+    font-size: 35px;
+    line-height: 50px;
+    list-style: none;
+}
+[id='35mm'] ul{
+    list-style: none !important;
+}
+[id='35mm']{
+    background:#a2cafc;
+}
+#amor ul{
+    list-style: none;
+}
+#amor{
+    background:#ff3333;
+}
+#amor p{
+    padding: 20px;
+}
+#prensa ul{
+    list-style: none;
+}
+#prensa{
+    background:#ccff00;
+    color: #000 !important;
+}
+#prensa a{
+    color: #000 !important;
+}
+#contacto{
+    background: #ff8888;
+}
+
+#contacto > figure {
+    display: inline-block;
+    margin: 20px;
+}
+.contacto-img img{
+    height: 170px;
+    margin: auto;
+    text-align: center;
+}
+#contacto section{
+    padding-right: 300px;
+}
+#credito{
+    margin-top: -35px;
+    position: absolute;
+    right: 10px;
+    font-size: 1em;
+}
+#libro{
+    background: #ffcc00;
+    //color: #000
+}
+#libro a{
+    //color: #000;
+}
+.tapa{
+    float:left;
+    width: 30%;
+}
+.tapa > img{
+    width: 100%
+}
+
+
+@media screen and (max-width: 50em) {
+    .tapa{
+        display: none;
+    }
+    .section{
+        padding: 20px;
+    }
+    .container{
+        padding: 10px;
+    }
+    .tile{
+        padding: 5px;
+        width: 48%;
+    }
+    h4{
+        padding: 10px;
+    }
+    .floating-image{
+        max-height: 150px;
+        right: 20px;
+        bottom: 20px;
+    }
+    #contacto > figure{
+        width: 100%;
+        padding: 25px 0;
+        margin: 0;
+    }
+    .contacto-img img {
+    height: 120px;
+    }
+    .text ul{
+    padding-bottom: 150px;
+}
+    #contacto{
+        text-align: center;
+    }
+    #contacto h1{
+        text-align: left;
+    }
+    #credito{
+        display: none;
+    }
+
+}

@@ -1,0 +1,8 @@
+[11-Aug-2018 19:36:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function direction() on null in /home/levihernan/public_html/misc/tininew/panel/app/src/panel.php:362
+Stack trace:
+#0 /home/levihernan/public_html/misc/tininew/panel/app/src/panel.php(517): Kirby\Panel->direction()
+#1 /home/levihernan/public_html/misc/tininew/panel/app/src/panel.php(227): Kirby\Panel->redirect('login')
+#2 /home/levihernan/public_html/misc/tininew/panel/app/src/panel.php(161): Kirby\Panel->csrfCheck()
+#3 /home/levihernan/public_html/misc/tininew/panel/index.php(48): Kirby\Panel->__construct(Object(Kirby), '/home/leviherna...')
+#4 {main}
+  thrown in /home/levihernan/public_html/misc/tininew/panel/app/src/panel.php on line 362

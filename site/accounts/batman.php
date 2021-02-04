@@ -9,6 +9,6 @@ role: admin
 history:
   - textos/sangre-crujiente
   - textos/volumetria-remota
-  - textos/texto-para-la-muestra-descomposiciones-de-mariano-pascual
+  - >
+    textos/texto-para-la-muestra-descomposiciones-de-mariano-pascual
   - diario-blog-no-se
-  - contacto

@@ -7,11 +7,10 @@ email: mail@mail.com
 language: es_419
 role: admin
 history:
-  - >
-    textos/algo-de-esto-podria-reanudar-las-cosas
-  - prensa/resena-de-de-todas-las-cosas-que-nunca-entnedi-siempre-vas-a-ser-mi-favorita-por-adrian-vietez-para-zenda-libros
-  - textos/texto-para-la-muestra-descomposiciones-de-mariano-pascual
-  - textos/when-a-fire-starts-to-burn
-  - diario-blog-no-se/de-febrero-de-2019
+  - textos/el-dia-mas-fro-del-verano
+  - textos/instrucciones-para-el-fin-del-mundo
+  - textos
+  - textos/solo-se-qu
+  - textos/me-acuerdo
 firstname: ""
 lastname: ""

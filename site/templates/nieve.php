@@ -33,10 +33,6 @@
     $('#add-me-text').text('<?= $page->post()->toText() ?>');
   });
 
-  $('.text-input').on('click touchstart', placeHolder);
-  $('.add-me-text').on('click touchstart', addMeButton);
-
-
 </script>
 
 <style>

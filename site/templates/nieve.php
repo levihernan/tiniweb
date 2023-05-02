@@ -80,10 +80,6 @@
     .text-input{
       margin-top: 100px;
     }
-
-    .waterfront {
-      height: 100vh;
-    }
   }
 
 </style>

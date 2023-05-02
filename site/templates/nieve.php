@@ -55,7 +55,7 @@
     }
 
   .spoti-container > iframe{
-    height: 100px;
+    height: 80px;
     width: 100%;
   }
   .text-input{
@@ -66,6 +66,24 @@
   }
   .form{
     width: 100%;
+  }
+  @media only screen and (max-width: 1024px) {
+    .video-post {
+      height: auto;
+    }
+    .video-post video {
+      width: 100%;
+      position: fixed;
+      top: 30%;
+      transform: translateY(-50%);
+    }
+    .text-input{
+      margin-top: 100px;
+    }
+
+    .waterfront {
+      height: 100vh;
+    }
   }
 
 </style>

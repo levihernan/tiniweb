@@ -1,39 +1,6 @@
 <?php snippet('header-content') ?>
 <?php echo css('assets/css/horizontal-scroll.css') ?>
 <?php echo js('assets/js/jquery.mousewheel.js') ?>
-<script>
-	$(function(){
-		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
-		$(".post").wrap("<td></td>");
-		$("#page-wrap").mousewheel(function(event, delta) {
-			this.scrollLeft -= (delta * 30);
-      event.preventDefault();
-            if ($(window).width() < 1080) {
-            }
-            else {
-               //event.preventDefault();
-            }
-            //	event.preventDefault();
-		});
-	});
-
-  function addMeButton(){
-    if($('.text-input').val() == ''){
-      // $('.text-input').focus();
-      $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
-    }
-    else $('.form').submit();
-  }
-
-  function placeHolder(){
-    $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
-  }
-
-  $(document).on('submit','.form',function(){
-    $('#add-me-text').text('<?= $page->post()->toText() ?>');
-  });
-
-</script>
 
 <style>
   .video-post{
@@ -76,6 +43,7 @@
       position: fixed;
       top: 30%;
       transform: translateY(-50%);
+      pointer-events: none;
     }
     .text-input{
       margin-top: 100px;
@@ -96,7 +64,7 @@
             <?= $page->text()->kirbytext() ?>
             
             <form class="form" action="https://formspree.io/f/xeqwvrqj" method="POST" target="_blank">
-            <input class="text-input" name="email" type="text" onClick="placeHolder()"></input>
+            <input id='input' class="text-input" name="email" type="text"></input>
             </form>
                 <h2 id='add-me-text' onClick="addMeButton()">
                 <?= $page->invitation()->toText() ?>
@@ -117,5 +85,43 @@
 
     </div>
   </main>
+
+
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("#page-wrap").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+      event.preventDefault();
+            if ($(window).width() < 1080) {
+            }
+            else {
+               //event.preventDefault();
+            }
+            //	event.preventDefault();
+		});
+	});
+
+  function addMeButton(){
+    if($('.text-input').val() == ''){
+      // $('.text-input').focus();
+      $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
+    }
+    else $('.form').submit();
+  }
+
+  function placeHolder(){
+    $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
+  }
+
+  $(document).on('submit','.form',function(){
+    $('#add-me-text').text('<?= $page->post()->toText() ?>');
+  });
+
+  $('#input').on('click tap select', placeHolder);
+  $('#add-me-text').on('click tap select', addMeButton);
+
+</script>
 
 <?php snippet('footer') ?>

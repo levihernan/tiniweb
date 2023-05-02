@@ -19,13 +19,18 @@
 
   function addMeButton(){
     if($('.text-input').val() == ''){
-      $('.text-input').focus();
+      // $('.text-input').focus();
+      $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
     }
     else $('.form').submit();
   }
 
+  function placeHolder(){
+    $('.text-input').attr('placeholder','<?= $page->placeholder()->toText() ?>');
+  }
+
   $(document).on('submit','.form',function(){
-    $('#add-me-text').text('added!');
+    $('#add-me-text').text('<?= $page->post()->toText() ?>');
   });
 
 </script>
@@ -54,8 +59,10 @@
     width: 100%;
   }
   .text-input{
-    width: 80%;
-    text-align: center
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
   }
   .form{
     width: 100%;
@@ -67,11 +74,13 @@
     <div id="page-wrap" class="imagenes">
         <div class="post text">
             <div class="waterfront">
+            <?= $page->text()->kirbytext() ?>
+            
             <form class="form" action="https://formspree.io/f/xeqwvrqj" method="POST" target="_blank">
-            <input class="text-input" name="email" type="text"></input>
+            <input class="text-input" name="email" type="text" onClick="placeHolder()"></input>
             </form>
                 <h2 id='add-me-text' onClick="addMeButton()">
-                  Add me to the waitlist!
+                <?= $page->invitation()->toText() ?>
                 </h2>
                 
                 <div class="spoti-container">

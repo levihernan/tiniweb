@@ -33,6 +33,10 @@
     $('#add-me-text').text('<?= $page->post()->toText() ?>');
   });
 
+  $('.text-input').on('click touchstart', placeHolder);
+  $('.add-me-text').on('click touchstart', addMeButton);
+
+
 </script>
 
 <style>
@@ -79,6 +83,11 @@
     }
     .text-input{
       margin-top: 100px;
+    }
+
+    .spoti-container > iframe{
+      height: 80px;
+      opacity: 100%;
     }
   }
 

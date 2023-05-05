@@ -63,7 +63,7 @@
             <div class="waterfront">
             <?= $page->text()->kirbytext() ?>
             
-            <form class="form" action="https://formspree.io/f/xeqwvrqj" method="POST" target="_blank">
+            <form class="form" action="<?= $page->endpoint()->toText() ?>" method="POST" target="_blank">
             <input id='input' class="text-input" name="email" type="text"></input>
             </form>
                 <h2 id='add-me-text' onClick="addMeButton()">

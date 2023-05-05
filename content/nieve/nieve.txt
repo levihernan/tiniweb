@@ -8,6 +8,10 @@ Text:
 
 ----
 
+Endpoint: https://formspree.io/f/xeqwvrqj
+
+----
+
 Placeholder: tu@mail.aca
 
 ----

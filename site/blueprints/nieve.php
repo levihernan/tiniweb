@@ -10,6 +10,9 @@ fields:
   text:
     label: Text
     type:  textarea
+  endpoint:
+    label: Endpoint
+    type: text
   placeholder:
     label: Placeholder
     type: text

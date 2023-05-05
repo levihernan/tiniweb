@@ -13,6 +13,9 @@ fields:
   endpoint:
     label: Endpoint
     type: text
+  playlist:
+    label: Playlist ID
+    type: text
   placeholder:
     label: Placeholder
     type: text
